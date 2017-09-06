@@ -1,1 +1,1 @@
-include ':app', ':intent_main', ':startactivity'
+include ':app', ':intent_main', ':startactivity', ':file'

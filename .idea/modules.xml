@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android_Practice.iml" filepath="$PROJECT_DIR$/Android_Practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file/file.iml" filepath="$PROJECT_DIR$/file/file.iml" />
       <module fileurl="file://$PROJECT_DIR$/intent_main/intent_main.iml" filepath="$PROJECT_DIR$/intent_main/intent_main.iml" />
       <module fileurl="file://$PROJECT_DIR$/startactivity/startactivity.iml" filepath="$PROJECT_DIR$/startactivity/startactivity.iml" />
     </modules>
