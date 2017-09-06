@@ -1,7 +1,11 @@
 package com.example.file;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.ContextMenu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,6 +29,7 @@ public class File_inpput extends AppCompatActivity {
     private Button bt_read;
     private EditText ed_input;
     private TextView textView_show;
+    private static final String password_remember = "PASSWORD_REMEMBER";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,5 +73,28 @@ public class File_inpput extends AppCompatActivity {
                 textView_show.setText(stringBuilder.toString());
                 break;
         }
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        getMenuInflater().inflate(R.menu.menu, menu);
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.logout:
+                SharedPreferences sharedPreferences = getSharedPreferences("user_pass", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putBoolean(password_remember, false);
+                Intent intent = new Intent();
+                intent.setClass(File_inpput.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+        }
+        return true;
     }
 }
