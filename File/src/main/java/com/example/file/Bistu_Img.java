@@ -17,10 +17,12 @@ public class Bistu_Img extends AppCompatActivity {
             Intent intent = new Intent();
             intent.setClass(Bistu_Img.this, File_inpput.class);
             startActivity(intent);
+            finish();
         } else {
             Intent intent = new Intent();
             intent.setClass(Bistu_Img.this, Login.class);
             startActivity(intent);
+            finish();
         }
     }
 }

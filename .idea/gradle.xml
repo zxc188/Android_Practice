@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/File" />
             <option value="$PROJECT_DIR$/Intent_Main" />
             <option value="$PROJECT_DIR$/StartActivity" />
+            <option value="$PROJECT_DIR$/handler_main" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

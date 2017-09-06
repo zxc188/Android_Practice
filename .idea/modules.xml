@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/File/File.iml" filepath="$PROJECT_DIR$/File/File.iml" />
       <module fileurl="file://$PROJECT_DIR$/Intent_Main/Intent_Main.iml" filepath="$PROJECT_DIR$/Intent_Main/Intent_Main.iml" />
       <module fileurl="file://$PROJECT_DIR$/StartActivity/StartActivity.iml" filepath="$PROJECT_DIR$/StartActivity/StartActivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/handler_main/handler_main.iml" filepath="$PROJECT_DIR$/handler_main/handler_main.iml" />
     </modules>
   </component>
 </project>
