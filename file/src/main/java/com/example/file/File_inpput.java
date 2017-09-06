@@ -90,7 +90,7 @@ public class File_inpput extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putBoolean(password_remember, false);
                 Intent intent = new Intent();
-                intent.setClass(File_inpput.this, MainActivity.class);
+                intent.setClass(File_inpput.this, Login.class);
                 startActivity(intent);
                 finish();
                 break;
