@@ -1,1 +1,1 @@
-include ':app', ':intent_main', ':startactivity', ':file'
+include ':AlertDialog', ':Intent_Main', ':StartActivity', ':File'

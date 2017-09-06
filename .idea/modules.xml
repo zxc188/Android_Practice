@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlertDialog/AlertDialog.iml" filepath="$PROJECT_DIR$/AlertDialog/AlertDialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/Android_Practice.iml" filepath="$PROJECT_DIR$/Android_Practice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/file/file.iml" filepath="$PROJECT_DIR$/file/file.iml" />
-      <module fileurl="file://$PROJECT_DIR$/intent_main/intent_main.iml" filepath="$PROJECT_DIR$/intent_main/intent_main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/startactivity/startactivity.iml" filepath="$PROJECT_DIR$/startactivity/startactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/File/file.iml" filepath="$PROJECT_DIR$/File/file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Intent_Main/intent_main.iml" filepath="$PROJECT_DIR$/Intent_Main/intent_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StartActivity/startactivity.iml" filepath="$PROJECT_DIR$/StartActivity/startactivity.iml" />
     </modules>
   </component>
 </project>

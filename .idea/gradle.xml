@@ -9,10 +9,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/file" />
-            <option value="$PROJECT_DIR$/intent_main" />
-            <option value="$PROJECT_DIR$/startactivity" />
+            <option value="$PROJECT_DIR$/AlertDialog" />
+            <option value="$PROJECT_DIR$/File" />
+            <option value="$PROJECT_DIR$/Intent_Main" />
+            <option value="$PROJECT_DIR$/StartActivity" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
