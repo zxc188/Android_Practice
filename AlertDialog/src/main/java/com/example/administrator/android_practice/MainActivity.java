@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.mess:
                 AlertDialog.Builder builder_mess = new AlertDialog.Builder(this);
                 builder_mess.setTitle("提示")
-                        .setMessage("这个是一个提示")
+                        .setMessage("请输入用户名和密码")
                         .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
