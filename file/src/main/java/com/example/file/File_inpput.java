@@ -5,12 +5,13 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -46,7 +47,7 @@ public class File_inpput extends AppCompatActivity {
         switch (id) {
             case R.id.bt_save:
                 try {
-                    FileOutputStream fileOutputStream = new FileOutputStream("File_Main");
+                    FileOutputStream fileOutputStream = openFileOutput("File_Main.txt",MODE_PRIVATE);
                     BufferedOutputStream out = new BufferedOutputStream(fileOutputStream);
                     out.write(ed_input.getText().toString().getBytes(StandardCharsets.UTF_8));
                     out.close();
@@ -59,8 +60,8 @@ public class File_inpput extends AppCompatActivity {
             case R.id.bt_read:
                 StringBuilder stringBuilder = new StringBuilder("");
                 try {
-                    FileInputStream fileOutputStream = new FileInputStream("File_Main");
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(fileOutputStream));
+                    FileInputStream fileInputStream = openFileInput("File_Main.txt");
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(fileInputStream));
                     try {
                         while (reader.ready()) {
                             stringBuilder.append(reader.readLine());
@@ -71,19 +72,21 @@ public class File_inpput extends AppCompatActivity {
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
-                textView_show.setText(stringBuilder.toString());
+                Toast.makeText(File_inpput.this, stringBuilder.toString(), Toast.LENGTH_LONG).show();
                 break;
         }
     }
 
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
-        getMenuInflater().inflate(R.menu.menu, menu);
-    }
 
     @Override
-    public boolean onContextItemSelected(MenuItem item) {
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id) {
             case R.id.logout:

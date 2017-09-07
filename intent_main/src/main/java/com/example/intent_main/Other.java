@@ -10,21 +10,22 @@ import android.widget.Toast;
 
 public class Other extends AppCompatActivity {
     private Button btback;
-
+    private String one;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.back);
+        Intent intent = getIntent();
+        one = intent.getStringExtra("one");
+        Toast.makeText(Other.this, one, Toast.LENGTH_LONG).show();
         btback = (Button) findViewById(R.id.back);
         btback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = getIntent();
-                int one = intent.getIntExtra("one", -1);
-                int two = intent.getIntExtra("two", -1);
-                Toast.makeText(Other.this, ""+one+"+"+two, Toast.LENGTH_LONG).show();
                 Intent goback = new Intent();
-                intent.putExtra("result", "" + one + two);
+                goback.putExtra("result", one+"11111111");
+                goback.setClass(Other.this, MainActivity.class);
                 setResult(2, goback);
+                finish();
             }
         });
     }

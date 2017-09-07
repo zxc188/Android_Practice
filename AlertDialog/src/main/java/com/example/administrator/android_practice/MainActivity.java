@@ -4,7 +4,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -21,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.login, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
 
     @Override
-    public boolean onContextItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id) {
             case R.id.login:
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                         .setPositiveButton("登录", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                if (username.getText().equals("abc") && userpassword.getText().equals("123")) {
+                                if (username.getText().toString().equals("abc") && userpassword.getText().toString().equals("123")) {
                                     Toast.makeText(MainActivity.this, "success", Toast.LENGTH_LONG).show();
                                 } else {
                                     Toast.makeText(MainActivity.this, "error", Toast.LENGTH_LONG).show();
@@ -56,7 +56,20 @@ public class MainActivity extends AppCompatActivity {
                         })
                         .show();
                 break;
+            case R.id.mess:
+                AlertDialog.Builder builder_mess = new AlertDialog.Builder(this);
+                builder_mess.setTitle("提示")
+                        .setMessage("这个是一个提示")
+                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+
+                            }
+                        })
+                        .show();
+
         }
         return true;
+
     }
 }

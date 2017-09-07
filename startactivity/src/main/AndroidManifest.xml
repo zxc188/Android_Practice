@@ -14,6 +14,7 @@
         <activity android:name=".Two">
             <intent-filter>
                 <action android:name="Start_This"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
     </application>
