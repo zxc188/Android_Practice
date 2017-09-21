@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calculator.fargement.Right_main">
+
+    <GridLayout
+        android:id="@+id/gride"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:columnCount="3">
+
+        <Button
+            android:text="sin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_sin" />
+
+        <Button
+            android:text="cos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_cos" />
+
+        <Button
+            android:text="tan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_tan" />
+
+        <Button
+            android:text="csin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_csin" />
+
+        <Button
+            android:text="ccos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_ccos" />
+
+        <Button
+            android:text="ctan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_ctan" />
+
+        <Button
+            android:text="x^2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_xx" />
+
+        <Button
+            android:text="x^3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_xxx" />
+
+        <Button
+            android:text="x^1/2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_med_x" />
+
+        <Button
+            android:text="log10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_log" />
+
+        <Button
+            android:text="ln"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_ln" />
+
+        <Button
+            android:text="pi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_pi" />
+
+        <Button
+            android:text="e^x-1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_x_lessone" />
+
+        <Button
+            android:text="e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_e" />
+
+        <Button
+            android:text="[x]"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_upx" />
+    </GridLayout>
+
+
+</FrameLayout>

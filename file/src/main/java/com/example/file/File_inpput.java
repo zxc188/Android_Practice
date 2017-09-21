@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -90,7 +89,6 @@ public class File_inpput extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case R.id.logout:
-                Log.v("asdnf", "asjdif");
                 SharedPreferences sharedPreferences = getSharedPreferences("user_pass", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putBoolean(password_remember, false);

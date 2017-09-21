@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="汇率"
+        android:id="@+id/menu_exchange"/>
+    <item android:title="长度"
+        android:icon="@mipmap/length"
+        app:showAsAction="always"
+        android:id="@+id/menu_length"/>
+    <item android:title="面积" />
+    <item android:title="重量" />
+</menu>

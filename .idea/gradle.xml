@@ -10,9 +10,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AlertDialog" />
+            <option value="$PROJECT_DIR$/Calculator" />
             <option value="$PROJECT_DIR$/File" />
             <option value="$PROJECT_DIR$/Intent_Main" />
             <option value="$PROJECT_DIR$/StartActivity" />
+            <option value="$PROJECT_DIR$/fragment" />
             <option value="$PROJECT_DIR$/handler_main" />
           </set>
         </option>

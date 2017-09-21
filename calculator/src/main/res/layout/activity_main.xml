@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.calculator.activitys.MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="0"
+        android:maxLines="5"
+        android:ems="5"
+        android:textSize="50dp"
+        android:id="@+id/ed_input" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.calculator.fargement.Left_main"
+        android:id="@+id/fragment"
+        tools:layout="@layout/fragment_left_main" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.calculator.fargement.Left_Under"
+        android:id="@+id/fragment4"
+        tools:layout="@layout/fragment_right_" />
+
+</LinearLayout>
